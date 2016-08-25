@@ -1,7 +1,7 @@
 import time
 
 
-class AsciiProgress:
+class LightBar:
     def __init__(self, gntr, block="░", width=100):
         self.source = gntr()
         self.block = block
@@ -29,6 +29,6 @@ if __name__ == '__main__':
             yield i
             time.sleep(0.1)
 
-    AsciiProgress(progress)()
-    AsciiProgress(progress, block="▓", width=20)()
-    AsciiProgress(progress, width=40)()
+    LightBar(progress)()
+    LightBar(progress, block="▓", width=20)()
+    LightBar(progress, width=40)()

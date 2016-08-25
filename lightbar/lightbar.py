@@ -25,7 +25,7 @@ class LightBar:
 
 if __name__ == '__main__':
     def progress():
-        for i in range(1, 100):
+        for i in range(1, 101):
             yield i
             time.sleep(0.1)
 

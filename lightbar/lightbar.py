@@ -3,7 +3,7 @@ import time
 
 class LightBar:
     def __init__(self, gntr, block="░", width=100):
-        self.source = gntr()
+        self.source = gntr
         self.block = block
         self.width = width
 
@@ -29,6 +29,6 @@ if __name__ == '__main__':
             yield i
             time.sleep(0.1)
 
-    LightBar(progress)()
-    LightBar(progress, block="▓", width=20)()
-    LightBar(progress, width=40)()
+    LightBar(progress())()
+    LightBar(progress(), block="▓", width=20)()
+    LightBar(progress(), width=40)()

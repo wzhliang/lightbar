@@ -13,3 +13,13 @@ The rest is taken care of by `lightbar` itself.
 
     from lightbar import LightBar
     LightBar(progress)()
+
+You can customize the block character and the width of the bar:
+
+    LightBar(progress(), block='-', width=20)
+
+
+TODO
+----
+1. Disable cursor
+2. Allow customized output
